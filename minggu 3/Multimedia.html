@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+  <html>
+	  <head>
+	  	 <title>Multimedia - HTML 5</h2>
+	  </head>
+	  <body>
+		  <h2>Belajar Multimedia - HTML 5</h2>
+		  <p>
+		  <button onclick="playVid()" type="button">Play Video</button>
+		  <button onclick="pauseVid()" type="button">Pause Video</button>
+		  <button onclick="durationVid()" type="button">Duration Video</button>
+		  <button onclick="enableControls()" type="button">Enable Controls</button>
+		  <button onclick="disableControls()" type="button">Disable Controls</button>
+		  <button onclick="checkControls()" type="button">Check Controls</button>
+		  </p>
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/kXpOEzNZ8hQ"> 
+		  </iframe>
+		</p>
+		<p>
+ 
+		<script>  
+		
+		  var vid = document.getElementById("myVideo");
+		  
+		  function playVid(){
+			  vid.play();
+		  }
+		  function pauseVid(){
+			  vid.pause();
+		  }
+		  function durationVid(){
+			  alert(vid.duration);
+		  }
+		  function checkControls(){
+			  alert(vid.controls);
+		  }
+		  function disableControls(){
+    			  vid.duration = false;
+				  vid.load();
+		  }
+          function enableControls(){
+    			  vid.controls = true;
+				  vid.load();
+	</script>
+</body>
+
+</html>
+		  
+		  
+		  
+		  
+		  
+	  
+
+		 
+
+ 
+ 
